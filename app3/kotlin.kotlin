@@ -1,0 +1,5 @@
+fun main() {
+    for (i in 0..999999) {
+        println("Line $i: println('Hello World')")
+    }
+}
