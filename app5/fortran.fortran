@@ -1,0 +1,6 @@
+PROGRAM HelloWorld
+    INTEGER :: i
+    DO i = 1, 1000000
+        WRITE(*, '(A, I0, A)') "Line ", i, ": WRITE(*, '(A)') 'Hello World'"
+    END DO
+END PROGRAM HelloWorld
