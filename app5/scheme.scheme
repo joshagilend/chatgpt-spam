@@ -1,0 +1,6 @@
+(define (generate-lines n)
+  (if (> n 0)
+      (begin
+        (display (string-append "Line " (number->string n) ": display 'Hello World'\n"))
+        (generate-lines (- n 1)))))
+(generate-lines 1000000)
