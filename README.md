@@ -1,0 +1,2 @@
+# chatgpt-spam
+chatgpt
