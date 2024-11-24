@@ -1,0 +1,9 @@
+#import <Foundation/Foundation.h>
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        for (int i = 0; i < 1000000; i++) {
+            NSLog(@"Line %d: NSLog('Hello World')", i);
+        }
+    }
+    return 0;
+}
