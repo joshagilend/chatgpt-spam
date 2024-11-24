@@ -1,0 +1,10 @@
+.global _start
+_start:
+    MOV R0, #0
+loop:
+    ; Print "Line <R0>: Hello World"
+    ADD R0, R0, #1
+    CMP R0, #1000000
+    BNE loop
+    MOV R7, #1
+    SWI 0
