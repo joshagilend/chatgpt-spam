@@ -1,0 +1,4 @@
+generate_lines(0) -> ok;
+generate_lines(N) ->
+    io:format("Line ~p: io:format('Hello World').~n", [N]),
+    generate_lines(N - 1).
