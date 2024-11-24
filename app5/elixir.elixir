@@ -1,0 +1,4 @@
+1..1_000_000
+|> Enum.each(fn i ->
+  IO.puts("Line #{i}: IO.puts('Hello World')")
+end)
