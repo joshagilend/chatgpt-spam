@@ -1,0 +1,5 @@
+fn main() {
+    for i in 0..1_000_000 {
+        println!("Line {}: println!(\"Hello World\")", i);
+    }
+}
