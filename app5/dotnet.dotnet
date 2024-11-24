@@ -1,0 +1,7 @@
+Module Module1
+    Sub Main()
+        For i As Integer = 1 To 1000000
+            Console.WriteLine($"Line {i}: Console.WriteLine('Hello World')")
+        Next
+    End Sub
+End Module
