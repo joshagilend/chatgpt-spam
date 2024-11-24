@@ -1,0 +1,20 @@
+section .data
+    message db "Line %d: Hello World", 0
+section .bss
+    count resb 4
+section .text
+    global _start
+_start:
+    mov ecx, 0
+loop_start:
+    cmp ecx, 1000000
+    jge exit
+    ; Code to print `message` with ecx value here
+    inc ecx
+    jmp loop_start
+exit:
+    mov eax, 60
+    xor edi, edi
+    syscall
+
+# Assembly is highly system-dependent, so this is pseudocode.
